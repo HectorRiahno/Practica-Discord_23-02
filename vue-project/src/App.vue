@@ -1,6 +1,6 @@
 <script setup>
   import { ref } from 'vue';
-  // import amigo from './components/amigo.vue';
+  // import AmigoComponent from '@/components/AmigoComponent.vue'
   let text=ref('')
   let indice=ref(0)
   let array=[{name:'Marcos Perez',mensaje1:['hola, como estas']},
@@ -74,7 +74,7 @@
         <h1>{{ array[indice].name }}</h1>
       </div>
       <!-- variable a repetir -->
-      <!-- <amigo v-for="(obj,i) in array" :key="i" :amigo="obj" :index="i" @marcos="marcos"></amigo> -->
+      <!-- <AmigoComponent v-for="(obj,i) in array" :key="i" :amigo="obj" :index="i" @marcos="Marcosarcos"></AmigoComponent> -->
       <div v-for="(obj,i) in array[indice].mensaje1" :key="i" >
         <div v-if="array[indice].mensaje1[i]!=null" class="relative bg-black/50 text-white/50 mt-6 p-2 rounded-md border border-white/30">
           <p class=""> {{ array[indice].mensaje1[i] }}</p>

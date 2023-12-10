@@ -1,4 +1,4 @@
-<!-- <script setup>
+<script setup>
 const props=defineProps({
     amigo:{
         type:String,
@@ -8,10 +8,10 @@ const props=defineProps({
         type:Number
     }
 })
-const emit=defineEmits(['marcos'])
-function marcos(i){
-    emit('marcos',i)
-}
+// const emit=defineEmits(['marcos'])
+// function marcos(i){
+//     emit('marcos',i)
+// }
 </script>
 <template>
     <div v-for="(obj,i) in props[indice].mensaje1" :key="i" >
@@ -20,4 +20,4 @@ function marcos(i){
           <p class="text-end font-extralight text-xs mt-2">24/12/2023 12:00am</p>
         </div>
       </div>
-</template> -->
+</template>
